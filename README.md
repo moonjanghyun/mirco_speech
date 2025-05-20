@@ -10,11 +10,9 @@ Sketch > Include Library > Manage Libraries...
 
 < 파일 구조 >
 
-my_project/
-├── my_voice_project.ino          <-- 메인 스케치 파일
-├── model.h                       <-- TFLite 모델의 C 배열 헤더
-├── model.cc                      <-- TFLite 모델의 C 배열 소스
-├── audio_provider.h / .cpp       <-- 마이크 입력 처리
-├── feature_provider.h / .cpp     <-- 특징 추출 관리
-├── model_functions.h / .cpp      <-- 모델 실행 함수들 (ModelInit, RunInference 등)
-├── micro_features_micro_model_settings.h  <-- 특징 관련 설정
+my_project/ micro_speech.ino             <-- 메인 스케치 파일.
+          /model.h                       <-- TFLite 모델의 C 배열 
+          /audio_provider.h / .cpp       <-- 마이크 입력 처리
+          /feature_provider.h / .cpp     <-- 특징 추출 관리
+          /feature_generator.h / .cpp          
+          /micro_features_micro_model_settings.h / .cpp  <-- 모델 특징 세팅 관련 설정.
